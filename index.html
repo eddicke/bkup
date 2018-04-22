@@ -174,7 +174,7 @@ b.setEnabled(false)
           
           
             socket.on('newplayer', function(posx){
-    balls[posx.id].position.y += posx.pos;
+    balls[posx.id].position.z += posx.pos;
   });
           
           socket.on("player", function(spawn){
